@@ -1,0 +1,5 @@
+a=list(map(int,input("Enter Integer Collection 1 : ").split()))
+b=list(map(int,input("Enter Integer Collection 2 : ").split()))
+print("Same Length : ",len(a)==len(b))
+print("Same Sum : ",sum(a)==sum(b))
+print("Common value is present : ",bool(len(set(a)&set(b))))
