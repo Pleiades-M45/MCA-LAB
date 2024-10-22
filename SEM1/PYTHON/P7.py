@@ -1,9 +1,8 @@
-count={}
+word_count={}
 a=input("Enter a sentence : ")
-b=a.split()
-for i in b:
-    count[i]=count.get(i,0)+1
-print("Word Frequency : ",count)
+for i in a.lower().split():
+    word_count[i]=word_count.get(i,0)+1
+print("Word Frequency : ",word_count)
 
-count_char = {i: a.count(i) for i in sorted(set(a)) if i.isalnum()}
-print("Character Frequency : ",count_char)
+char_count = {i: a.count(i) for i in sorted(set(a.lower())) if i.isalnum()}
+print("Character Frequency : ",char_count)
