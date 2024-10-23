@@ -11,22 +11,24 @@ struct Node
 
 // Global root declaration
 struct Node* root = NULL;
+struct Node *ptr, *temp = NULL, *last_node = NULL, *item_node = NULL, *queue[MAX_SIZE];
+int front = 0,rear = 0;
 
 struct Node* create(int item)
 {
-    struct Node* ptr = (struct Node*) malloc (sizeof(struct Node));  
+    ptr = (struct Node*) malloc (sizeof(struct Node));  
     ptr->data = item;  
     ptr->left = NULL;
     ptr->right = NULL;
     return ptr;
 }
 
-void insert()
+void insert_node()
 {
     int item;
     printf("Enter item for new node: ");
     scanf("%d", &item);
-    struct Node* ptr = create(item);
+    ptr = create(item);
 
     if(root == NULL)
     {
@@ -36,12 +38,11 @@ void insert()
     }
 
     // Level-order insertion (using a queue)
-    struct Node* queue[MAX_SIZE];
-    int front = 0,rear = 0;
+    front=0,rear=0;
     queue[rear++] = root;
     while(front < rear)
     {
-        struct Node* temp = queue[front++];
+        temp = queue[front++];
         if(temp->left != NULL)
         {
             queue[rear++] = temp->left;
@@ -65,7 +66,7 @@ void insert()
     }
 }
 
-void delete()
+void delete_node()
 {
     int item;
     if(root == NULL)
@@ -94,12 +95,10 @@ void delete()
     }
 
     // Level order traversal using the queue
-    struct Node *temp = NULL, *last_node = NULL, *item_node = NULL;
-    struct Node* queue[MAX_SIZE];
-    int front = 0, rear = 0;
+    temp = NULL, last_node = NULL, item_node = NULL;
+    front=0,rear=0;
     queue[rear++] = root;
-
-    // do level order traversal to find the deepest node
+    // Find the deepest node
     while (front < rear)
     {
         temp = queue[front++];
@@ -166,7 +165,7 @@ void postorder(struct Node* root)
     printf("%d\t", root->data);
 }
 
-int main()
+void main()
 {
     int ch;
     while(1)
@@ -179,16 +178,22 @@ int main()
         printf("\n6. Exit");
         printf("\nEnter Your Choice: ");
         scanf("%d", &ch);
+        printf("\n");
         switch(ch)
         {
-            case 1: insert(); break;
-            case 2: delete(); break;
-            case 3: inorder(root); break;
-            case 4: preorder(root); break;
-            case 5: postorder(root); break;
+            case 1: insert_node(); break;
+            case 2: delete_node(); break;
+            case 3: if (root == NULL) {  printf("Tree is empty\n");  }
+                    else {  inorder(root);  }
+                    break;
+            case 4: if (root == NULL) {  printf("Tree is empty\n");  }
+                    else {  preorder(root);  }
+                    break;
+            case 5: if (root == NULL) {  printf("Tree is empty\n");  }
+                    else {  postorder(root);  }
+                    break;
             case 6: exit(0);
             default: printf("Invalid choice\n");
         }
     }
-    return 0;
 }
