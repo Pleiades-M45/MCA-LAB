@@ -137,14 +137,14 @@ void main()
                     scanf("%d", &item);
                     root = insert_node(root,item); 
                     break;
-	    case 2: if(root == NULL) { printf("Empty tree\n"); }
-		    else
-		    {
-		     printf("Enter the item to delete : ");
-		     scanf("%d",&item);
-		     root = delete_node(root,item);
-		    }
-		    break;
+	          case 2: if(root == NULL) { printf("Empty tree\n"); }
+                    else
+                    {
+                    printf("Enter the item to delete : ");
+                    scanf("%d",&item);
+                    root = delete_node(root,item);
+                    }
+                    break;
             case 3: if (root == NULL) {  printf("Tree is empty\n");  }
                     else {  inorder(root);  }
                     break;
