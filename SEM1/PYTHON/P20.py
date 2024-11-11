@@ -1,2 +1,3 @@
-a=input("Enter Full Name : ")
-print(a[::-1])
+name=input("Enter Full Name : ").split()
+for i in name[::-1]:
+    print(i,end=" ")

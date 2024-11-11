@@ -12,6 +12,7 @@ for i in range(n):
     a,b=b,a
     b,c=c,b
 
+print("\n")
 
 l=[1,2,3,4]
 sum=0
