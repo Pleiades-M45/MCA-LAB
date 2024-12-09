@@ -70,7 +70,7 @@
 32. Create a package graphics with modules rectangle, circle and sub-package 3D-graphics with modules cuboid and sphere. Include methods to find area and perimeter of respective figures in each module. Write programs that finds area and perimeter of figures by different importing statements. (Include selective import of modules and import * statements)
 33. Write a Python program to read a file line by line and store it into a list.
 34. Write a program to copy odd lines of one line to other.
-35. Write a program to append a fle with contents accepted from a user.
+35. Write a program to append a file with contents accepted from a user.
 36. Perform file Manipulations -
     (a) Find the lengthiest line in a file
     (b) Extract all phone numbers from a file
