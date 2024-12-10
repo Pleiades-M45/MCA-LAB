@@ -1,5 +1,5 @@
 try:
-    with open('email_file.txt', 'r') as f:
+    with open('input.txt', 'r') as f:
         lines = f.readlines()
         print(lines)
 
