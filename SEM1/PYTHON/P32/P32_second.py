@@ -4,7 +4,7 @@ from graphics import *
 length = 5
 width = 3
 print("Rectangle Area: ",rectangle.area(length, width))
-print(f"Rectangle Perimeter: ",rectangle.perimeter(length, width))
+print("Rectangle Perimeter: ",rectangle.perimeter(length, width))
 
 # Calculate area and perimeter of circle
 radius = 4

@@ -9,7 +9,7 @@ from graphics.graphics_3D.sphere import surface_area as sphere_surface_area, vol
 length = 5
 width = 3
 print("Rectangle Area: ",rect_area(length, width))
-print(f"Rectangle Perimeter: ",rect_perimeter(length, width))
+print("Rectangle Perimeter: ",rect_perimeter(length, width))
 
 # Calculate area and perimeter of circle
 radius = 4
