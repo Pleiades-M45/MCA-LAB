@@ -37,5 +37,5 @@
 | [34](P34) | Write a program to copy odd lines of one line to other. |
 | [35](P35) | Write a program to append a file with contents accepted from a user. |
 | [36](P36) | Perform file Manipulations -<br>    (a) Find the lengthiest line in a file<br>    (b) Extract all phone numbers from a file<br>    (c) Remove all comment lines from a file. |
-| [37](P37) | Extract mobile number from a file that starts with 6,7,8 and 9. |
-| [38](P38) | Create a package 'File' which contains modules 'math' and 'science'. 'math' module has methods to compute square of a number, power of (x, y) and modulus. 'science' module has methods to compute volumes of cuboid, sphere and cylinder. Write a program to demonstrate the working of 'File' package using various styles of import statement. |
+| [37](P37) | Extract mobile number(s) from a file that starts with 6,7,8 and 9. |
+| [38](P38) | Create a package 'File' which contain modules 'math' and 'science'. 'math' module has methods to compute square of a number, power of x, y and modulus. 'science' module has methods to compute volumes of cuboid, sphere and cylinder. Write a program to demonstrate the working of 'File' package using various styles of import statement. |
