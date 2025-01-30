@@ -1,4 +1,4 @@
-<h1 align="center"> PROGRAM LIST </h1>
+# PROGRAM LIST
 | File / Directory | Description |
 |:---:|---|
 | [1](P1.py) | Write a program to get a string from the user<br>   (a) replace all occurrences of first character with ‘$’, except first character<br>   (b) Create a string from given string where first and last characters exchanged. |
