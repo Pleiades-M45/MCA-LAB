@@ -55,6 +55,10 @@ public class StudentMain {
             ob[i] = new Student(scanner);
         }
 
+        // for (int i = 0; i < 3; i++) {
+        //     ob[i].display();
+        // }
+        
         sortStudent(ob);
 
         System.out.println("\t---Ranklist---\n");
