@@ -1,10 +1,10 @@
 class Volume {
     public double calc_volume(double a) {
-        return (a * a * a);
+        return a * a * a;
     }
 
     public double calc_volume(double l, double b, double h) { 
-        return (l * b * h);
+        return l * b * h;
     }
 
     public double calc_volume(double r, boolean sphere) {
