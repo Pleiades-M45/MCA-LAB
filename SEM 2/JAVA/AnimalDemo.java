@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 abstract class Animal {
     private String species;
-    int weight, age;
+    float weight;
+    int age;
     protected String color;
 
-    public Animal(String s, int w, int a, String c) {
+    public Animal(String s, float w, int a, String c) {
         species = s;
         weight = w;
         age = a;
@@ -20,7 +21,7 @@ abstract class Animal {
 class Dog extends Animal {
     private String name, owner;
 
-    public Dog(String s, int w, int a, String c, String name, String owner) {
+    public Dog(String s, float w, int a, String c, String name, String owner) {
         super(s, w, a, c);
         this.name = name;
         this.owner = owner;
@@ -36,7 +37,7 @@ class Cat extends Animal {
     private String name, eyecolor;
     int tail_length;
 
-    public Cat(String s, int w, int a, String c, String name, String eyecolor, int tail_length) {
+    public Cat(String s, float w, int a, String c, String name, String eyecolor, int tail_length) {
         super(s, w, a, c);
         this.name = name;
         this.eyecolor = eyecolor;
@@ -56,7 +57,7 @@ public class AnimalDemo {
 
         System.out.println("Enter Dog details: Species, Weight, Age, Color, Name, Owner");
         String dSpecies = sc.nextLine();
-        int dWeight = sc.nextInt();
+        float dWeight = sc.nextFloat();
         int dAge = sc.nextInt();
         sc.nextLine(); // Consume newline
         String dColor = sc.nextLine();
@@ -65,7 +66,7 @@ public class AnimalDemo {
 
         System.out.println("Enter Cat details: Species, Weight, Age, Color, Name, Eye Color, Tail Length");
         String cSpecies = sc.nextLine();
-        int cWeight = sc.nextInt();
+        float cWeight = sc.nextFloat();
         int cAge = sc.nextInt();
         sc.nextLine(); // Consume newline
         String cColor = sc.nextLine();

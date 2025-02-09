@@ -1,18 +1,18 @@
 class Area {
     public int calc_area(int a) {
-        return (a * a);
+        return a * a;
     }
 
     public double calc_area(double a) {
-        return (a * a);
+        return a * a;
     }
 
     public int calc_area(int l, int b) {
-        return (l * b);
+        return l * b;
     }
 
     public double calc_area(double l, double b) {
-        return (l * b);
+        return l * b;
     }
 
     public double calc_area(double r, boolean circle) {
