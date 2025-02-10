@@ -39,7 +39,15 @@ public class CPUDemo{
     public static void main(String[] args) {
         CPU c = new CPU(1000);
         c.displayCPU();
-        c.new Processor(4, "Intel").displayProcessor();
+        c.new Processor(4, "AMD").displayProcessor();
         new CPU.RAM(16, "Corsair").displayRAM();
     }
 }
+
+/*
+Sample Input/Output:
+
+CPU Price: 1000
+Processor Cores: 4, Manufacturer: AMD
+RAM: 16 GB, Manufactured by Corsair
+ */

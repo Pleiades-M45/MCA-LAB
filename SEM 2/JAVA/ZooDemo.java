@@ -22,7 +22,7 @@ class Zoo {
         }
 
         public void displayEnclosure() {
-            System.out.println("Name: " + name + ", Type: " + type);
+            System.out.println("\nName: " + name + ", Type: " + type);
             for (String x : animals)
                 System.out.println(x);
         }
@@ -67,3 +67,28 @@ public class ZooDemo {
         info.displayZooInfo();
     }
 }
+
+/*
+Sample Input/Output:
+
+Name: Orcaland Zoo
+Savannah
+Rainforest
+Aquarium
+
+Name: Savannah, Type: Outdoor
+Lion
+Elephant
+Cheetah
+
+Name: Rainforest, Type: Indoor
+Monkey
+Toucan
+Jaguar
+
+Name: Aquarium, Type: Indoor
+Sharks
+Turtles
+Clownfish
+Address: Orcaland, Iceland, Phone Number: 1234567890
+ */

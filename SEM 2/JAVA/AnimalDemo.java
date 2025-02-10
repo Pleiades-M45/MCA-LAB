@@ -13,9 +13,11 @@ abstract class Animal {
         color = c;
     }
 
-    public void display() {
+    public void displayAnimal() {
         System.out.println(age + " years old " + color + " " + species + " of " + weight + " Kg.");
     }
+
+    public abstract void display();
 }
 
 class Dog extends Animal {
@@ -27,8 +29,9 @@ class Dog extends Animal {
         this.owner = owner;
     }
 
+    @Override
     public void display() {
-        super.display();
+        displayAnimal();
         System.out.println(name + " is owned by " + owner + ".\n");
     }
 }
@@ -44,8 +47,9 @@ class Cat extends Animal {
         this.tail_length = tail_length;
     }
 
+    @Override
     public void display() {
-        super.display();
+        displayAnimal();
         System.out.println(name + " has " + eyecolor + " eyes and a " + tail_length + " cm long tail.\n");
     }
 }
@@ -80,5 +84,35 @@ public class AnimalDemo {
 
         a = new Cat(cSpecies, cWeight, cAge, cColor, cName, cEyeColor, cTailLength);
         a.display();
+
+        sc.close();
     }
 }
+
+/*
+Sample Input/Output:
+
+Enter Dog details: Species, Weight, Age, Color, Name, Owner
+Samoyed
+15
+3
+White
+Wooyoo
+Aether
+Enter Cat details: Species, Weight, Age, Color, Name, Eye Color, Tail Length
+Persian
+12
+2
+Grey
+Luna
+Silver
+30
+
+        Animal Details
+
+3 years old White Samoyed of 15.0 Kg.
+Wooyoo is owned by Aether.
+
+2 years old Grey Persian of 12.0 Kg.
+Luna has Silver eyes and a 30 cm long tail.
+ */

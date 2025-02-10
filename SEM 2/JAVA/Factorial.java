@@ -22,3 +22,10 @@ public class Factorial {
         scanner.close();
     }
 }
+
+/*
+Sample Input/Output:
+
+Enter number: 5
+Factorial of 5 = 120
+ */

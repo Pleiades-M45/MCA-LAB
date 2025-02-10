@@ -31,3 +31,10 @@ public class Prime {
         scanner.close();
     }
 }
+
+/*
+Sample Input/Output:
+
+Enter number: 10
+10 is not Prime
+ */

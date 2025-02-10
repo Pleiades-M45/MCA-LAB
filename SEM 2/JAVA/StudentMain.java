@@ -70,3 +70,37 @@ public class StudentMain {
         scanner.close();
     }
 }
+
+/*
+Sample Input/Output:
+
+No. of Students: 3
+RollNo: 1
+Name: Alice
+        Marks (3 subjects): 
+40 20 10
+RollNo: 2
+Name: Aether
+        Marks (3 subjects): 
+10 50 60
+RollNo: 3
+Name: Paimon
+        Marks (3 subjects): 
+10 10 10
+        ---Ranklist---
+
+RollNo: 2
+Name: Aether
+Marks: [10, 50, 60]
+Total Marks: 120
+
+RollNo: 1
+Name: Alice
+Marks: [40, 20, 10]
+Total Marks: 70
+
+RollNo: 3
+Name: Paimon
+Marks: [10, 10, 10]
+Total Marks: 30
+ */

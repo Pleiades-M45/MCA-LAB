@@ -35,3 +35,14 @@ public class AreaDemo {
         System.out.println("Area of Triangle(double) = " + ob.calc_area(2.0, 3.2, true));
     }
 }
+
+/*
+Sample Input/Output:
+
+Area of Square(int) = 25
+Area of Square(double) = 30.25
+Area of Rectangle(int) = 6
+Area of Rectangle(double) = 9.2
+Area of Circle(double) = 3.14
+Area of Triangle(double) = 3.2
+ */

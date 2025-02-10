@@ -33,3 +33,13 @@ public class VolumeDemo {
         System.out.println("Volume of Cone(double) = " + String.format("%.3f", ob.calc_volume(2.0, 3.2, "cone")));
     }
 }
+
+/*
+Sample Input/Output:
+
+Volume of Cube(double) = 8.0
+Volume of Cuboid(double) = 12.0
+Volume of Sphere(double) = 4.1866666666666665
+Volume of Cylinder(double) = 6.908000000000001
+Volume of Cone(double) = 13.397
+ */

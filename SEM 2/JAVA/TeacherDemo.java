@@ -112,3 +112,65 @@ public class TeacherDemo {
         sc.close();
     }
 }
+
+/* 
+Sample Input/Output:
+
+Enter the number of teachers: 2
+
+Enter details for Teacher 1:
+Name: Ayaka Kamisato 
+Gender: Female
+Address: Greenvalley St                      
+Age: 28
+Employee ID: 101
+Company Name: River High School
+Qualification: MCA
+Salary: 50000
+Teacher ID: 501
+Subject: Data Structures
+Department: Computer Applications
+
+Enter details for Teacher 2:
+Name: Kaeya Alberich
+Gender: Male
+Address: Bluevalley St 123
+Age: 30
+Employee ID: 102
+Company Name: Orca Academy
+Qualification: Ph.D in Physics
+Salary: 65000
+Teacher ID: 502
+Subject: Physics
+Department: Science
+
+
+        Teacher Details
+
+
+Name: Ayaka Kamisato
+Gender: Female
+Address: Greenvalley St
+Age: 28
+Employee ID: 101
+Company: River High School
+Qualification: MCA
+Salary: $50000.0
+Teacher ID: 501
+Subject: Data Structures
+Department: Computer Applications
+-------------------------
+
+Name: Kaeya Alberich
+Gender: Male
+Address: Bluevalley St 123
+Age: 30
+Employee ID: 102
+Company: Orca Academy
+Qualification: Ph.D in Physics
+Salary: $65000.0
+Teacher ID: 502
+Subject: Physics
+Department: Science
+-------------------------
+*/
