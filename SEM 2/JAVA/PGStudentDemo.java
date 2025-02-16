@@ -5,10 +5,9 @@ interface Showable {
 }
 
 class Person implements Showable {
-    private String name, gender;
-    int phoneno;
+    private String name, gender, phoneno;
 
-    public Person(String name, String gender, int phoneno) {
+    public Person(String name, String gender, String phoneno) { 
         this.name = name;
         this.gender = gender;
         this.phoneno = phoneno;
@@ -24,7 +23,7 @@ class Student extends Person {
     String course;
     double score;
 
-    public Student(String name, String gender, int phoneno, String course, double score) {
+    public Student(String name, String gender, String phoneno, String course, double score) {
         super(name, gender, phoneno);
         this.course = course;
         this.score = score;
@@ -40,7 +39,7 @@ class Student extends Person {
 class PGStudent extends Student {
     String researchArea, guide;
 
-    public PGStudent(String name, String gender, int phoneno, String course, double score, String researchArea, String guide) {
+    public PGStudent(String name, String gender, String phoneno, String course, double score, String researchArea, String guide) {
         super(name, gender, phoneno, course, score);
         this.researchArea = researchArea;
         this.guide = guide;
@@ -96,8 +95,7 @@ public class PGStudentDemo {
             String gender = sc.nextLine();
 
             System.out.print("Phone No: ");
-            int phoneno = sc.nextInt();
-            sc.nextLine();
+            String phoneno = sc.nextLine(); 
 
             System.out.print("Course: ");
             String course = sc.nextLine();
