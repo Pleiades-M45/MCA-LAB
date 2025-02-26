@@ -21,4 +21,4 @@
 | [17](GDemo.java) | Create a Java package `geometry` that contains three sub-packages: `interfaces`, `shapes2D`, and `shapes3D`. <br> `interfaces` package defines interfaces: `calcArea` and `calcPerimeter`  <br> `shapes2D` package contains classes: `Circle` and `Rectangle` <br> `shapes3D` package contains classes: `Cuboid` and `Sphere` |
 | [18](ArithDemo.java) | Create an `arithmetic` package that has classes and interfaces for the basic arithmetic operations. Test the package by implementing all operations on two given numbers. |
 | [19](NameList.java) | Create a list of names. Write a menu driven program to <br> (a) Add names <br> (b) Remove names <br> (c) Search for a name <br> (d) Sort names <br> (e) Display names |
-| [20](abc.java) | Create a class `Product(name, price)`. Write a menu driven program to <br> (a) Add products <br> (b) Sort product by name <br> (c) Display products |
+| [20](ProductDemo.java) | Create a class `Product(name, price)`. Write a menu driven program to <br> (a) Add products <br> (b) Sort product by name <br> (c) Display products |
