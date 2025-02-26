@@ -63,7 +63,7 @@ public class NameList {
                     System.exit(0);
                     
                 default:
-                    System.out.println("\nInvalid Choice\n");
+                    System.out.println("\nInvalid Choice !\n");
                     break;
             }
         }
