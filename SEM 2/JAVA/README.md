@@ -22,3 +22,6 @@
 | [18](ArithDemo.java) | Create an `arithmetic` package that has classes and interfaces for the basic arithmetic operations. Test the package by implementing all operations on two given numbers. |
 | [19](NameList.java) | Create a list of names. Write a menu driven program to <br> (a) Add names <br> (b) Remove names <br> (c) Search for a name <br> (d) Sort names <br> (e) Display names |
 | [20](ProductDemo.java) | Create a class `Product(name, price)`. Write a menu driven program to <br> (a) Add products <br> (b) Sort product by name <br> (c) Display products |
+| [21](HashMapStudent.java) | Design a system to store student information, where each student has a unique `ID (integer)` and a `name (string)`. Use appropriate Java collection to efficiently store and retrieve student names based on their ID. |
+| [22](HashSetAttendee.java) | Store a list of attendees, where each attendee is represented by an `Attendee` class with `name`, `email`, and `registrationId` (a unique integer). Ensure that each attendee is registered only once (i.e., no duplicate registrations based on registrationId). |
+| [23](AverageException.java) |  Find the average of N positive integers, raising a user defined exception for each negative input. |
