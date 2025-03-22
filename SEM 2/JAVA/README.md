@@ -25,3 +25,5 @@
 | [21](HashMapStudent.java) | Design a system to store student information, where each student has a unique `ID (integer)` and a `name (string)`. Use appropriate Java collection to efficiently store and retrieve student names based on their ID. |
 | [22](HashSetAttendee.java) | Store a list of attendees, where each attendee is represented by an `Attendee` class with `name`, `email`, and `registrationId` (a unique integer). Ensure that each attendee is registered only once (i.e., no duplicate registrations based on registrationId). |
 | [23](AverageException.java) |  Find the average of N positive integers, raising a user defined exception for each negative input. |
+| [24](ThreadDemo.java) |  Implement a java program that uses multithreading to print the multiplication table of a given number and the factors of another number. |
+| [25](ThreeThreadDemo.java) |  Creates three threads: first thread prints prime numbers in a given range, second prints even numbers in a given range, and third generates the first N Fibonacci numbers. |
