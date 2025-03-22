@@ -26,3 +26,13 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Reversed String: ' || rev_str);
 END;
 /
+
+/*
+Sample Input/Output:
+
+Enter value for in_str: old   6:     in_str := '&in_str';
+new   6:     in_str := 'Hello';
+
+Original String: Hello
+Reversed String: olleH
+*/

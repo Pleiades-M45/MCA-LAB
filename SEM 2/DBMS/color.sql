@@ -17,3 +17,12 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Color for number ' || num || ' is: ' || color);
 END;
 /
+
+/*
+Sample Input/Output:
+
+Enter a number between 1 and 3: old   2:     num NUMBER := & num;
+new   2:     num NUMBER :=	    2;
+
+Color for number 2 is: Blue
+*/

@@ -6,10 +6,7 @@ DECLARE
     max_value NUMBER;
 BEGIN
 
-    DBMS_OUTPUT.PUT_LINE('Enter first value:');
     a := &a; 
-    
-    DBMS_OUTPUT.PUT_LINE('Enter second value:');
     b := &b; 
     
     IF a > b THEN
@@ -21,3 +18,14 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Maximum value is: ' || max_value);
 END;
 /
+
+/*
+Sample Input/Output:
+
+Enter value for a: old   7:     a := &a;
+new   7:     a := 10;
+Enter value for b: old   8:     b := &b;
+new   8:     b := 20;
+
+Maximum value is: 20
+*/

@@ -10,3 +10,12 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Factorial of ' || num || ' is ' || fact);
 END;
 /
+
+/*
+Sample Input/Output:
+
+Enter value for num: old   2:     num NUMBER := &num;
+new   2:     num NUMBER := 4;
+
+Factorial of 4 is 24
+*/
