@@ -1,6 +1,0 @@
-Start of File
-Contact information:
-#Personal Number:(123) 456-7890 or 987-654-3210.
-#Office Number: +1 333 123 4567.
-#For inquiries, contact: 555.987.6543 or 800 123 4567.
-End of File.
