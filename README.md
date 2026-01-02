@@ -1,6 +1,6 @@
 ## MCA-LAB Repository
 
-This repository contains a comprehensive collection of lab programs, assignments, and resources for the Master of Computer Applications (MCA) curriculum, organized semester-wise. It covers a wide range of topics including Data Structures, Python, Java, Operating Systems, PL/SQL, Data Science, and Android Development.
+This repository contains a comprehensive collection of lab programs, assignments, and resources for the Master of Computer Applications (MCA) curriculum, organized semester-wise. It covers a wide range of topics including Data Structures, Python, Operating Systems, PL/SQL, Data Science, and Android Development.
 
 ### Folder Structure
 
@@ -16,5 +16,5 @@ This repository contains a comprehensive collection of lab programs, assignments
   - **PL_SQL**: SQL scripts for database operations and PL/SQL procedures
 
 - **SEM 3**
-  - **ANDROID**: Android development programs and projects
+  - **Android**: Android development programs and projects
   - **DSc**: Jupyter notebooks for Data Science, including machine learning and data analysis tasks with datasets and lab questions
