@@ -2,8 +2,20 @@
 
 This repository contains a comprehensive collection of lab programs, assignments, and resources for the Master of Computer Applications (MCA) curriculum, organized semester-wise. It covers a wide range of topics including Data Structures, Python, Java, Operating Systems, PL/SQL, Data Science, and Android Development.
 
-### Folder Structure
-
+### Repository Structure
+```
+MCA-LAB/
+├── SEM 1/
+│   ├── DS/
+│   └── PYTHON/
+├── SEM 2/
+│   ├── JAVA/
+│   ├── OS/
+│   └── PL_SQL/
+└── SEM 3/
+    ├── Android/
+    └── DSc/
+```
 - **SEM 1**
 
   - **DS**: C programs for Data Structures (linked lists, trees, queues, graphs, etc.)
