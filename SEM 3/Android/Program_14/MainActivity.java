@@ -6,7 +6,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements TextWatcher {
 
     EditText percent;
 
@@ -17,26 +17,24 @@ public class MainActivity extends AppCompatActivity {
 
         percent = findViewById(R.id.edit1);
 
-        percent.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
+        percent.addTextChangedListener(this);
+    }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-            @Override
-            public void afterTextChanged(Editable editable) {
-                String s = editable.toString();
-                if (!s.isEmpty()) {
-                    float num = Float.parseFloat(s);
-                    if (num > 100) {
-                        percent.setText("100");
-                        percent.setSelection(percent.getText().length()); // Move cursor to end
-                    }
-                }
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+    @Override
+    public void afterTextChanged(Editable editable) {
+        String s = editable.toString();
+        if (!s.isEmpty()) {
+            float num = Float.parseFloat(s);
+            if (num > 100) {
+                percent.setText("100");
+                percent.setSelection(percent.getText().length()); // Move cursor to end
             }
-        });
+        }
     }
 }
