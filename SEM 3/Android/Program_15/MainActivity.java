@@ -11,7 +11,8 @@ import android.widget.CompoundButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, 
+        TextWatcher, View.OnClickListener {
 
     EditText percent;
     CheckBox c;
@@ -26,43 +27,45 @@ public class MainActivity extends AppCompatActivity {
         c = findViewById(R.id.cb1);
         b = findViewById(R.id.b1);
 
-        b.setEnabled(false); // Disable button initially
+        b.setEnabled(false);
 
-        c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                b.setEnabled(isChecked); // Enable button only if checkbox is checked
-            }
-        });
+        c.setOnCheckedChangeListener(this);
+        percent.addTextChangedListener(this);
+        b.setOnClickListener(this);
+    }
 
-        percent.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (buttonView.getId() == R.id.cb1) {
+            b.setEnabled(isChecked);
+        }
+    }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-            @Override
-            public void afterTextChanged(Editable editable) {
-                String s = editable.toString();
-                if (!s.isEmpty()) {
-                    try {
-                        float num = Float.parseFloat(s);
-                        if (num > 100) {
-                            editable.replace(0, editable.length(), "100");
-                        }
-                    } catch (NumberFormatException e) {
-                        // Ignore invalid input
-                    }
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+    @Override
+    public void afterTextChanged(Editable editable) {
+        String s = editable.toString();
+        if (!s.isEmpty()) {
+            try {
+                float num = Float.parseFloat(s);
+                if (num > 100) {
+                    editable.replace(0, editable.length(), "100");
                 }
+            } catch (NumberFormatException e) {
+                // Ignore invalid input
             }
-        });
+        }
+    }
 
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Button click logic here
-            }
-        });
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.b1) {
+            // Button click logic here
+        }
     }
 }
