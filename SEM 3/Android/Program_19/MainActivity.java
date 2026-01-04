@@ -57,9 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    // -----------------------------
-    // Helper Class (Your Style)
-    // -----------------------------
+    // Helper Class
     class MyHelper extends SQLiteOpenHelper {
 
         MyHelper(Context c) {
