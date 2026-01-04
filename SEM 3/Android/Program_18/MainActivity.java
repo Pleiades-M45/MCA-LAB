@@ -3,15 +3,18 @@ package com.example.task_tracker;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private int taskCount = 0;
     private TextView countTextView;
+    private Button addTaskButton;
+    private Button clearTasksButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,24 +22,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         countTextView = findViewById(R.id.countTextView);
-        Button addTaskButton = findViewById(R.id.addTaskButton);
-        Button clearTasksButton = findViewById(R.id.clearTasksButton);
+        addTaskButton = findViewById(R.id.addTaskButton);
+        clearTasksButton = findViewById(R.id.clearTasksButton);
 
         updateCount();
 
-        addTaskButton.setOnClickListener(v -> {
-            taskCount++;
-            updateCount();
-        });
-
-        clearTasksButton.setOnClickListener(v -> {
-            taskCount = 0;
-            updateCount();
-        });
+        addTaskButton.setOnClickListener(this);
+        clearTasksButton.setOnClickListener(this);
     }
 
     private void updateCount() {
         countTextView.setText("Tasks: " + taskCount);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.addTaskButton) {
+            taskCount++;
+            updateCount();
+        } else if (v.getId() == R.id.clearTasksButton) {
+            taskCount = 0;
+            updateCount();
+        }
     }
 
     @Override
